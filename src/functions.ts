@@ -4,7 +4,7 @@
  * - Accepts a "name" parameter of type "string"
  * - that just prints (logs) that "name" on the screen
  */
-function printName(name: string): void {
+function printName(name: string): void {console.log(name);
   // write your code here
 }
 
@@ -16,8 +16,9 @@ function printName(name: string): void {
  * - Age = current year - birth
  */
 function printAge(birthYear: number): void {
-  // write your code here
+  console.log(2025 - birthYear);
 }
+
 
 // example:
 printAge(2000); // => 2025 (2025 - 2000)
@@ -39,7 +40,15 @@ printAge(2000); // => 2025 (2025 - 2000)
 type LanguageType = "en" | "es" | "fr" | "tr";
 
 function printHello(name: string, language: LanguageType): void {
-  // write your code here
+  if (language === "en") {
+    console.log(`Hello ${name}`);
+  } else if (language === "es") {
+    console.log(`Hola ${name}`);
+  } else if (language === "fr") {
+    console.log(`Bonjour ${name}`);
+  } else if (language === "tr") {
+    console.log(`Merhaba ${name}`);
+  }
 }
 
 // example:
@@ -54,8 +63,8 @@ printHello("Aziz", "fr"); // => "Bonjour Aziz"
  * - Accepts a "y" parameter of type "number"
  * - should print out the bigger number
  */
-function printMax(x: number, y: number) {
-  // write your code here
+function printMax(x: number, y: number): void {
+  console.log(Math.max(x, y));
 }
 
 // example:
